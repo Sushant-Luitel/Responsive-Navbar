@@ -25,7 +25,7 @@ button {
   height: 100vh;
 }
 .navbar {
-  height: 70px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   background-color: var(--bluish);
@@ -47,17 +47,27 @@ button {
 .menu-button {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .left a {
     font-size: 0.8em;
   }
 }
 @media screen and (max-width: 500px) {
-  .left a {
+  .left {
     display: none;
   }
   .menu-button {
+    display: inline;
+    width: 4.5em;
+    height: 4em;
+    padding: 0.5em;
+    margin: 8px 2px;
+  }
+  #hidden {
     display: flex;
+    flex-direction: column;
+    background-color: var(--bluish);
+    gap: 1em;
   }
 }
 
